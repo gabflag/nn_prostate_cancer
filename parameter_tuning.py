@@ -24,18 +24,18 @@ class Classifier_torch(nn.Module):
 
         self.dense_02 = nn.Linear(neurons, 1, bias=True)
         initializer(self.dense_02.weight)
-        self.dropout = nn.Dropout(0.2)
+        #self.dropout = nn.Dropout(0.2)
 
         self.output = nn.Sigmoid()
 
     def forward(self, x):
         x = self.dense_00(x)
         x = self.activation_00(x)
-        x = self.dropout(x)
+        #x = self.dropout(x)
 
         x = self.dense_01(x)
         x = self.activation_01(x)
-        x = self.dropout(x)
+        #x = self.dropout(x)
 
         x = self.dense_02(x)
         x = self.output(x)
