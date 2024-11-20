@@ -64,3 +64,8 @@ Validation was done through 'Cross Validation' with the dataset divided into 10 
 -   Numpy - Working with data compatible with machine learning libraries
 -   Pytorch - For model development
 -   Skorch and Sklearn - For data tuning and model validation/analysis processes
+-   Django - For web application
+
+<div style="text-align: center;">
+  <img src="image.png" alt="alt text" style="border-radius: 15px;"/>
+</div>

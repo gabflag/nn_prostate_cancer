@@ -1,0 +1,49 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Classification - Prostate Cancer</title>
+
+    <link rel="stylesheet" href="{% static 'css/home.css'%}"/>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Binary Classification Prostate Cancer</h1>
+        <form id="dataForm">
+            <label for="radius">Radius:</label>
+            <input type="number" id="radius" name="radius" step="0.0001" required><br>
+
+            <label for="texture">Texture:</label>
+            <input type="number" id="texture" name="texture" step="0.0001" required><br>
+
+            <label for="perimeter">Perimeter:</label>
+            <input type="number" id="perimeter" name="perimeter" step="0.0001" required><br>
+
+            <label for="area">Area:</label>
+            <input type="number" id="area" name="area" step="0.0001" required><br>
+
+            <label for="smoothness">Smoothness:</label>
+            <input type="number" id="smoothness" name="smoothness"  step="0.0001" required><br>
+
+            <label for="compactness">Compactness:</label>
+            <input type="number" id="compactness" name="compactness" step="0.0001"required><br>
+
+            <label for="symmetry">Symmetry:</label>
+            <input type="number" id="symmetry" name="symmetry" step="0.0001"required><br>
+
+            <label for="fractal_dimension">Fractal Dimension:</label>
+            <input type="number" id="fractal_dimension" name="fractal_dimension" step="0.0001" required><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script>const staticPath = "{% static '' %}";</script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+
+</body>
+</html>
