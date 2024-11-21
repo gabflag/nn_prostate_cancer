@@ -9,16 +9,16 @@ document.addEventListener("DOMContentLoaded", function() {
             body: formData,
         })
 
-        .then(response => response.json())  // Converte a resposta para JSON
+        .then(response => response.json())
         .then(data => {
             if (data.status === 'ok') {
-                alert(data.message);  // Exibe a mensagem do backend (Aprovado ou Reprovado)
+                alert(data.message); 
             } else {
-                alert('Erro ao processar os dados');  // Caso ocorra um erro
+                alert('Erro ao processar os dados');
             }
         })
         .catch(error => {
-            alert('Erro de comunicação com o servidor');  // Exibe alerta de erro caso falhe a requisição
+            alert('Erro de comunicação com o servidor');
         });
         
     });
