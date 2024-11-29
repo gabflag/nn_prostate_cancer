@@ -23,3 +23,5 @@ def process(request):
         return JsonResponse({'status': 'ok', 'message': result})
     
     return JsonResponse({'status': 'error'}, status=400)
+
+    
